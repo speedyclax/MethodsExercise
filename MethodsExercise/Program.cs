@@ -2,13 +2,11 @@
 {
     public class Program
     {
+        
+
         static void Main(string[] args)
         {
         //----------------------Exercise 1---------------------------------------
-        //Name: 
-        //Favorite Color: 
-        //Favorite Animal: 
-        //Favorite Band: 
 
             Console.WriteLine("Thank you for signing up for this dating service. First question: What is your first name?");
             var userName = Console.ReadLine();
@@ -31,11 +29,36 @@
             Console.WriteLine($"Favorite band:   {band}");
             Console.WriteLine("--------------------------------------------------");
 
-            Console.WriteLine("This is awkward, but I really like you. Can I get your number? You can just type it in.");
+            Console.WriteLine("Let me show you what I can do. First, give me a number.");
+            int num1 = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Now give me another number, and I'll add them together.");
+            int num2 = int.Parse(Console.ReadLine());
+
+            int sum = Sum(num1, num2);
+            
+            Console.WriteLine($"Added together, those numbers = {sum}. How's that? Now let me do some multiplication for you. Give me a new number.");
+            int x = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Ok. Now give me one more, please.");
+            int y = int.Parse(Console.ReadLine());
+
+            int product = Multiply(x, y);
+
+            Console.WriteLine($"Thank you. Multiplying those numbers gives you {product}. Impressed?");
 
 
-        //----------------------Exercise 2---------------------------------------
+            //----------------------Exercise 2---------------------------------------
 
+        }
+        public static int Sum(int num1, int num2)
+        {
+            int sumAnswer = num1 + num2;
+            return sumAnswer;
+        }
+        public static int Multiply(int x, int y)
+        {
+            return x * y;
         }
 
 
