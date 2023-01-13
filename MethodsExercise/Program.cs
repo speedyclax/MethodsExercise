@@ -6,7 +6,6 @@
 
         static void Main(string[] args)
         {
-        //----------------------Exercise 1---------------------------------------
 
             Console.WriteLine("Thank you for signing up for this dating service. First question: What is your first name?");
             var userName = Console.ReadLine();
@@ -29,7 +28,7 @@
             Console.WriteLine($"Favorite band:   {band}");
             Console.WriteLine("--------------------------------------------------");
 
-            Console.WriteLine("Let me show you what I can do. First, give me a number.");
+            Console.WriteLine("Now let me show you what I can do. First, give me a number.");
             int num1 = int.Parse(Console.ReadLine());
 
             Console.WriteLine("Now give me another number, and I'll add them together.");
@@ -45,10 +44,7 @@
 
             int product = Multiply(x, y);
 
-            Console.WriteLine($"Thank you. Multiplying those numbers gives you {product}. Impressed?");
-
-
-            //----------------------Exercise 2---------------------------------------
+            Console.WriteLine($"Thank you. Multiplying those numbers gives you {product}. Are you impressed?");
 
         }
         public static int Sum(int num1, int num2)
